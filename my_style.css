@@ -1,0 +1,847 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300&subset=cyrillic,latin);
+
+.container {
+   
+    min-width: 1569px;
+    height: 940px;
+} 
+
+.navigation {
+  
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #e7e6e7, #d1d0d1);
+    box-shadow: inset 0 -0.5px 0.5px 0 rgba(0, 0, 0, 0.2), inset 0 0.5px 0.5px 0 rgba(255, 255, 255, 0.6);
+}
+
+.table_1 {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.row_1 {
+    display: table-row;
+    width: 100%;
+    height: 100%;
+}
+
+.cell_1 {
+    display: table-cell;
+    width: 300px;
+    height: 100%;
+    float: left;
+    
+}
+
+.main_content {
+    margin-top: -1px;
+}
+
+.cell_2 {
+    display: table-cell;
+    width: 62%;
+    height: 100%;
+    float: none;
+    
+}
+
+.cell_3 {
+    display: table-cell;
+    width: 300px;
+    height: 100%;
+    
+    
+}
+
+.left_panel {
+    height: 95%;
+    width: 257px;
+    
+    float: left;
+    border-radius: 5px;
+    background-blend-mode: overlay, normal;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(rgba(230, 230, 230, 0.3), rgba(230, 230, 230, 0.3));
+    box-shadow: 1px 0 1px 0 rgba(74, 74, 74, 0.24);
+}
+
+.panel_epics {
+    height: 70%;
+    width: 100%;
+    border-bottom: 2px solid #e7e9eb;
+    box-shadow: 0px 1px 10px 0px rgba(50, 50, 50, 0.32);
+    overflow-y: scroll;
+}
+
+.panel_calendar {
+    width: 92%;
+    padding: 0px 9px;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.calendar {
+    
+    height: 93%;
+    margin-left: 250px;
+  
+
+}
+
+.calendar_menu {
+    
+    height: 50px;
+
+}
+
+.year {
+    width: 200px;
+    height: 100%;
+    
+    float: left;
+}
+
+.switch_days {
+    width: 180px;
+    height: 100%;
+    
+    float: right; 
+}
+
+.months {
+    
+    height: 93%;
+    width: 94.8%;
+    display: table;
+    margin-left: 40px;
+    margin-top: 23px;
+
+}
+
+.month {
+    
+    width: 21%;
+    height: 33.3%;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 11px;
+}
+
+.month_name {
+    
+    width: 100%;
+    height: 40px;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #e30613;
+    margin-left: 2px;
+}
+
+.week {
+    
+    width: 99%;
+    height: 30px;
+    margin-left: 4px;
+    
+}
+
+.week_day {
+    
+    height: 100%;
+    width: 13.4%;
+    float: left;
+    opacity: 0.59;
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    /* text-align: center; */
+    color: #949494;
+    
+}
+
+.month_days {
+    
+    height: 66%;
+    width: 100%;
+}
+
+.day {
+    
+    height: 30px;
+    width: 30px;
+    float: left;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.08;
+    letter-spacing: -0.7px;
+    /* text-align: center; */
+    color: #717171;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 13px;
+    margin-left: -6px;
+    border-radius: 100%;
+    
+}
+
+.day:hover {
+    /* border: 1px solid silver;
+    height: 27.03px;
+    width: 28px; */
+    box-shadow: inset 0px 0px 0px 1px silver;
+    box-sizing: border-box;
+}
+
+
+
+.day:active {
+    /* background-color: silver; */
+    /* border: 1px solid silver; */
+    box-shadow: inset 0px 3px 3px 0px silver;
+}
+
+.day:focus {
+    background-color: rgb(80, 92, 255);
+    color: white;
+    outline: none;
+}
+
+
+
+
+.panel_month {
+    
+    width: 100%;
+    height: 40px;
+    display: table;
+    margin-top: -13px;
+    margin-bottom: 12px;
+    
+}
+
+.panel_week {
+    
+    width: 100%;
+    height: 30px;
+    margin-left: 10px;
+    
+}
+
+.panel_week_day {
+    
+    height: 100%;
+    width: 13.4%;
+    float: left;
+    
+}
+
+.panel_month_days {
+    
+    height: 66%;
+    width: 100%;
+    margin-left: 3px;
+}
+
+.panel_day {
+    height: 30px;
+    width: 30px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 1px;
+    border-radius: 100%;
+    line-height: 180%;
+}
+
+.panel_day a {
+    margin: 1px;
+}
+
+.panel_day:hover {
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 0px 1px silver;
+
+}
+
+.panel_back {
+    
+    height: 100%;
+    width: 30px;
+    float: left;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.panel_back:active, .panel_ahead:active {
+    /* background-color: rgb(187, 187, 187); */
+    box-shadow: inset 0px 2px 6px 0px silver;
+}
+
+.panel_ahead {
+    
+    height: 100%;
+    width: 30px;
+    float: right;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.panel_selected_month {
+    
+    height: 100%;
+    width: 62.3%;
+    float: left;
+}
+
+.panel_selected_month_value {
+    height: 100%;
+    width: 70px;
+    float: left;
+    margin-left: 4px;
+}
+
+.panel_selected_year_value {
+    height: 100%;
+    width: 50px;
+    
+    float: right;
+    margin-right: 5px;
+}
+
+.year_select {
+    margin-left: 35%;
+}
+
+.switch_days_today {
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset; 
+    background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237); 
+    border-radius: 4px; 
+    border: 1px solid rgb(220, 220, 220); 
+    display: inline-block; 
+    cursor: pointer; 
+    color: rgb(119, 119, 119); 
+    font-family: Arial; 
+    font-size: 13px; 
+    font-weight: bold; 
+    padding: 0px 25px; 
+    text-decoration: none; 
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    /* margin-top: 10px; */
+    margin-left: -4px;
+    height: 26px;
+    width: 33px;
+}
+
+.switch_days_today_text {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding-top: 5px;
+
+}
+
+.switch_days_back_icon, .switch_days_forvard_icon {
+    width: 28px;
+    height: 28px;
+    margin-top: -7px;
+    margin-left: -9px;
+}
+
+.switch_days_back, .switch_days_forvard {
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset; 
+    background: linear-gradient(rgb(237, 237, 237) 5%, rgb(223, 223, 223) 100%) rgb(237, 237, 237); 
+    border-radius: 4px; 
+    border: 1px solid rgb(220, 220, 220); 
+    display: inline-block; 
+    cursor: pointer; 
+    color: rgb(119, 119, 119); 
+    font-family: Arial; 
+    font-size: 13px; 
+    font-weight: bold; 
+    padding: 6px 8px; 
+    text-decoration: none; 
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    margin-top: 10px;
+}
+
+.switch_days_back {
+    margin-left: 11px;
+    height: 14px;
+    width: 10px;
+}
+
+.switch_days_forvard {
+    margin-left: -4px;
+    height: 14px;
+    width: 10px;
+}
+
+.search_button{
+    float: right;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset; 
+    background-image: linear-gradient(to bottom, #fefefe, #f1f1f1); 
+    border-radius: 4px; 
+    border: 1px solid rgb(220, 220, 220); 
+    display: inline-block; 
+    cursor: pointer; 
+    color: rgb(119, 119, 119); 
+    font-family: Arial; 
+    font-size: 13px; 
+    font-weight: bold; 
+    padding: 6px 60px; 
+    text-decoration: none; 
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    margin-right: 15px;
+    margin-bottom: 11px;
+}
+
+.select_period_day, .select_period_week, .select_period_month, .select_period_year {
+    float: left;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset; 
+    background-image: linear-gradient(to bottom, #fefefe, #f1f1f1); 
+    border-radius: 4px; 
+    border: 1px solid rgb(220, 220, 220); 
+    display: inline-block; 
+    cursor: pointer; 
+    color: rgb(119, 119, 119); 
+    font-family: Arial; 
+    font-size: 13px; 
+    font-weight: bold; 
+    padding: 6px 30px; 
+    text-decoration: none; 
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    margin-bottom: 11px;
+    margin-left: -3px;
+
+}
+
+.select_period_day {
+    margin-left: 300px;
+}
+
+.select_calendar, .add_calendar, .download_calendar {
+    float: left;
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset; 
+    background-image: linear-gradient(to bottom, #fefefe, #f1f1f1); 
+    border-radius: 4px; 
+    border: 1px solid rgb(220, 220, 220); 
+    display: inline-block; 
+    cursor: pointer; 
+    color: rgb(119, 119, 119); 
+    font-family: Arial; 
+    font-size: 13px; 
+    font-weight: bold; 
+    padding: 6px 13px; 
+    text-decoration: none; 
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    margin-left: 20px;
+    margin-top: 11px;
+    
+}
+
+.add_calendar {
+    font-size: 13px;
+    height: 15px;
+    width: 30px;
+}
+
+.panel_selected_month_value_style {
+    float: right;
+    margin-top: 12px;
+    margin-right: -10px;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #252624;
+}
+
+.panel_selected_year_value_style {
+    float: left;
+    margin-top: 12px;
+    font-family: HelveticaNeue;
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #252624;
+}
+
+.selected_year_style {
+    font-family: HelveticaNeue;
+    font-size: 26px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    text-align: center;
+    color: #1d2022;
+}
+
+
+
+.selected_year {
+        margin-left: 87px;
+        margin-top: 12px;
+}
+
+.select_calendar:active, .add_calendar:active, 
+.select_period_day:active, .select_period_week:active, 
+.select_period_month:active, .select_period_year:active, 
+.download_calendar:active, .search_button:active, 
+.switch_days_back:active, .switch_days_today:active, 
+.switch_days_forvard:active {
+    box-shadow: inset 0px 1px 3px 1px silver;
+}
+
+.left_panel_menu {
+    width: 230px;
+    height: 1500px;   
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    text-align: left;
+    color: #575757;    
+    margin-left: 20px; 
+    /* margin-right: 20px;  */
+}
+
+.cloud_epics, .my_epics {
+    
+    width: 90%;
+    border-bottom: 0.1px solid #717171;
+    margin-right: 20px;
+
+    
+}
+
+.cloud_name, .my_mail_name {
+    
+    width: 100%;
+    height: 26px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+}
+
+.cloud_list_of_epics, .my_mail_list_of_epics{
+    
+    width: 230px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+   
+}
+
+/* .my_epics {
+    width: 100%;
+    height: 50px;
+    
+} */
+
+.epic {
+    width: 100%;
+    float: left;
+    height: 25px;
+    margin-top: 4px;
+    
+    cursor: pointer;
+    
+}
+
+.label {
+    cursor: pointer;
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------scroll settings-------------------- */
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+    }
+    
+::-webkit-scrollbar-track {
+    background-color:rgb(218, 218, 218);
+    }
+    
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 30px;
+    background-color:rgb(141, 141, 141);
+    }
+    
+::-webkit-scrollbar-thumb:hover {
+    background-color:rgb(100, 100, 100);
+    cursor: pointer;
+    }
+    
+::-webkit-resizer {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+    }
+    
+    ::-webkit-scrollbar{
+    width: 7px;
+    }
+
+    /* ---------------------------scroll settings-------------------- */
+
+
+
+
+
+    /* ---------------------------checkbox settings-------------------- */
+
+
+    /* Скрываем реальный чекбокс */
+.checkbox {
+    display: none;
+    
+}
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.checkbox-custom {
+	position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+	width: 12px;             /* Обязательно задаем ширину */
+	height: 12px;            /* Обязательно задаем высоту */
+	border: 2px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.checkbox-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
+}
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom::before {
+	content: "";             /* Добавляем наш псевдоэлемент */
+	display: block;			 /* Делаем его блочным элементом */
+	position: absolute;      /* Позиционируем его абсолютным образом */
+	/* Задаем расстояние от верхней, правой, нижней и левой границы */
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	background: black;     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+    border-radius: 2px;
+}
+
+
+
+.personal_epic .checkbox-custom {
+    border: 2px solid red;
+}
+
+.personal_epic .checkbox:checked + .checkbox-custom::before {
+    background: red;
+}
+
+.alarm_epic .checkbox-custom {
+    border: 2px solid green;
+}
+
+.alarm_epic .checkbox:checked + .checkbox-custom::before {
+    background: green;
+}
+
+.work_epic .checkbox-custom {
+    border: 2px solid purple;
+}
+
+.work_epic .checkbox:checked + .checkbox-custom::before {
+    background: purple;
+}
+
+.common_epic .checkbox-custom {
+    border: 2px solid black;
+}
+
+.common_epic .checkbox:checked + .checkbox-custom::before {
+    background: black;
+}
+
+.education_epic .checkbox-custom {
+    border: 2px solid blue;
+}
+
+.education_epic .checkbox:checked + .checkbox-custom::before {
+    background: blue;
+}
+
+.bortlog_epic .checkbox-custom {
+    border: 2px solid pink;
+}
+
+.bortlog_epic .checkbox:checked + .checkbox-custom::before {
+    background: pink;
+}
+
+.info_epic .checkbox-custom {
+    border: 2px solid orange;
+}
+
+.info_epic .checkbox:checked + .checkbox-custom::before {
+    background: orange;
+}
+
+.travel_epic .checkbox-custom {
+    border: 2px solid brown;
+}
+
+.travel_epic .checkbox:checked + .checkbox-custom::before {
+    background: brown;
+}
+
+.friend_orinichev_epic .checkbox-custom {
+    border: 2px solid olive;
+}
+
+.friend_orinichev_epic .checkbox:checked + .checkbox-custom::before {
+    background: olive;
+}
+
+.friend_ershov_epic .checkbox-custom {
+    border: 2px solid tomato;
+}
+
+.friend_ershov_epic .checkbox:checked + .checkbox-custom::before {
+    background: tomato;
+}
+
+.friend_kirillov_epic .checkbox-custom {
+    border: 2px solid slateblue;
+}
+
+.friend_kirillov_epic .checkbox:checked + .checkbox-custom::before {
+    background: slateblue;
+}
+
+.friend_sidorenkov_epic .checkbox-custom {
+    border: 2px solid hotpink;
+}
+
+.friend_sidorenkov_epic .checkbox:checked + .checkbox-custom::before {
+    background: hotpink;
+}
+
+.friend_pespereva_epic .checkbox-custom {
+    border: 2px solid chocolate;
+}
+
+.friend_pespereva_epic .checkbox:checked + .checkbox-custom::before {
+    background: chocolate;
+}
+
+.friend_pesterev_epic .checkbox-custom {
+    border: 2px solid crimson;
+}
+
+.friend_pesterev_epic .checkbox:checked + .checkbox-custom::before {
+    background: crimson;
+}
+
+.friend_morozov_epic .checkbox-custom {
+    border: 2px solid burlywood;
+}
+
+.friend_morozov_epic .checkbox:checked + .checkbox-custom::before {
+    background: burlywood;
+}
+
+.friend_powarejkin_epic .checkbox-custom {
+    border: 2px solid navy;
+}
+
+.friend_powarejkin_epic .checkbox:checked + .checkbox-custom::before {
+    background: navy;
+}
+
+    /* ---------------------------checkbox settings-------------------- */
+
+
+    
+.selected_year_style {
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+
+    /* background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%; */
+}
+
+.selected_year_style select {
+    
+    overflow-y: scroll;
+    padding: 5px px;
+    width: 100%;
+
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+}
+
+
+
+.selected_year_style select:focus {
+    outline: none;
+    cursor: pointer;
+}
