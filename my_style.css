@@ -82,12 +82,28 @@
     margin-top: 30px;
 }
 
-.calendar {
+.global_calendar_year {
     
     height: 93%;
     margin-left: 250px;
-  
+    display: block;
+}
 
+.global_calendar_week {
+    height: 93%;
+    margin-left: 250px;
+    display: none;
+}
+
+.global_calendar_month {
+    height: 93%;
+    margin-left: 257px;
+    display: none;
+
+}
+
+.global_calendar_day {
+    display: none;
 }
 
 .calendar_menu {
@@ -193,7 +209,7 @@
     color: #717171;
     cursor: pointer;
     text-align: center;
-    margin-right: 21px;
+    margin-right: 20px;
     margin-left: -6px;
     border-radius: 100%;
     
@@ -221,7 +237,10 @@
     outline: none;
 }
 
-
+.month_view_calendar_day:hover {
+    box-shadow: inset 0px 0px 0px 1px silver;
+    box-sizing: border-box;
+}
 
 
 .panel_month {
@@ -518,6 +537,16 @@
     box-shadow: inset 0px 1px 3px 1px silver;
 }
 
+.select_period_day:focus, .select_period_week:focus, 
+.select_period_month:focus, .select_period_year:focus {
+    background-image: none;
+    box-shadow: inset 0px 1px 3px 1px silver;
+    outline: none;
+    background-color: darkgrey;
+    color: white;
+    cursor: pointer;
+}
+
 .left_panel_menu {
     width: 230px;
     height: 1500px;   
@@ -564,11 +593,11 @@
    
 }
 
-/* .my_epics {
-    width: 100%;
-    height: 50px;
+.my_epics {
+    /* width: 100%; */
+    /* height: 50px; */
     
-} */
+}
 
 .epic {
     width: 100%;
@@ -844,4 +873,317 @@
 .selected_year_style select:focus {
     outline: none;
     cursor: pointer;
+}
+
+.other_month_day {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.week_view {
+    
+    /* height: 1000px; */
+    min-width: 99%;
+    margin-left: 8px;
+}
+
+.week_view_content {
+    
+    height: 870px;
+    width: 1600px;
+    margin-left: 40px;
+    /* margin-top: 10px; */
+    padding-top: 25px;
+}
+
+.week_view_date {
+    
+    width: 100%;
+    height: 30px;
+    float: left;
+
+}
+
+.week_view_month_value {
+    font-family: Arial;
+    font-size: 26px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    text-align: left;
+    color: #1d2022;
+}
+
+.week_view_main_content {
+    
+    width: 100%;
+    height: 96%;
+    float: left;
+}
+
+.week_view_header {
+    
+    height: 40px;
+    width: 99%;
+    border-bottom: 2px solid gray;
+    text-shadow: rgb(255, 255, 255) 0px 5px 0px;
+}
+
+.week_view_days {
+    
+    height: 790px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.week_view_day {
+    
+    height: 100%;
+    width: 220px;
+    float: right;
+    box-sizing: border-box;
+    
+}
+
+.day_of_the_week_number {
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.day_of_the_week_value {
+    
+    height: 20px;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.day_of_the_week_number, .day_of_the_week_value {
+    margin-top: 15px;
+    float: left;
+    font-size: 15px;
+    font-family: arial;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #323232;
+}
+
+.week_view_day_column {
+    
+    /* height: 1100px; */
+    width: 220px;
+    float: right;
+}
+
+.week_view_day_column_time {
+    width: 1%;
+    /* height: 1100px; */
+    float: right;
+    
+}
+
+.week_view_day_column_sunday {
+    margin-right: 9px;
+}
+
+.hour_of_the_day {
+    
+    height: 60px;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+
+}
+
+.week_view_day_column_time .hour_of_the_day {
+    border-bottom: 0.5px solid white;
+    border-top: 0.5px solid white;
+}
+
+.week_view_day_column_sunday .hour_of_the_day {
+    border-top: 0.5px solid rgb(230, 230, 230);
+    border-bottom: 0.5px solid rgb(230, 230, 230);
+    border-left: 0.5px solid rgb(230, 230, 230);
+}
+
+.week_view_day_column_monday .hour_of_the_day {
+    border-top: 0.5px solid rgb(230, 230, 230);
+    border-bottom: 0.5px solid rgb(230, 230, 230);
+    border-right: 0.5px solid rgb(230, 230, 230);
+}
+
+.week_view_day_column_saturday .hour_of_the_day {
+    border: 0.5px solid rgb(230, 230, 230);
+}
+.week_view_day_column_friday .hour_of_the_day {
+    border: 0.5px solid rgb(230, 230, 230);
+}
+
+.week_view_day_column_thursday .hour_of_the_day {
+    border: 0.5px solid rgb(230, 230, 230);
+}
+
+.week_view_day_column_wednesday .hour_of_the_day {
+    border: 0.5px solid rgb(230, 230, 230);
+}
+
+.week_view_day_column_tuesday .hour_of_the_day {
+    border: 0.5px solid rgb(230, 230, 230);
+}
+
+.week_view_day_column .hour_of_the_day {
+    border-top: 0.5px solid rgb(230, 230, 230);
+    border-bottom: 0.5px solid rgb(230, 230, 230);
+}
+
+.hour_of_the_day_value {
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #a8a8ad;
+    float: right;
+    margin-right: 12px;
+    margin-top: -8px;
+}
+
+.week_view_tuesday, .week_view_saturday, .week_view_friday,
+.week_view_thursday, .week_view_wednesday {
+    border-left: 0.5px solid rgb(230, 230, 230);
+    border-right: 0.5px solid rgb(230, 230, 230);
+}
+
+.week_view_monday {
+    border-right: 0.5px solid rgb(230, 230, 230);
+}
+
+.week_view_sunday {
+    border-left: 0.5px solid rgb(230, 230, 230);
+}
+
+.week_view_day_column_sunday, .week_view_day_column_saturday {
+    background-color: rgb(242, 242, 242);
+}
+
+.week_view_day_column .hour_of_the_day:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 1px silver;
+}
+
+.month_view_main_block {
+    
+    width: 1640px;
+    height: 895px;
+}
+
+.month_view_selected_month {
+    
+    width: 100%;
+    height: 60px;
+    
+}
+
+.month_view_selected_month_value {
+    font-family: arial;
+    font-size: 26px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    text-align: left;
+    color: #1d2022;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.month_view_calendar_week {
+    
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid gray;
+}
+
+.month_view_calendar_week_day {
+    
+    height: 100%;
+    width: 14.28%;
+    float: left;
+   
+}
+
+.month_view_calendar_week_day a {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #323232;
+    float: right;
+    margin-top: 10px;
+    margin-right: 7px;
+    text-align: center;
+}
+
+.month_view_calendar_days {
+    
+    width: 100%;
+    height: 89.5%;
+}
+
+.month_view_calendar_day {
+    /* border: 1px dashed black; */
+    border-bottom: 1px solid rgb(230, 230, 230);
+    border-right: 1px solid rgb(230, 230, 230);
+    height: 16.6%;
+    width: 14.28%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.month_view_calendar_day_number {
+    
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #323232;
+    float: right;
+    margin-right: 3px;
+    margin-top: 10px;
+    height: 22px;
+    width: 22px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.month_view_calendar_day_weekend {
+    background-color: rgb(242, 242, 242);
+}
+
+.month_view_calendar_day_other_day a {
+    color: #9b9b9b;
+}
+
+.day_view_main_block {
+    min-width: 99%;
+    margin-left: 8px;
+
 }

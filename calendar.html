@@ -23,10 +23,10 @@
 
                     </div>
                     <div class="cell_2">
-                        <span class="select_period_day">Day</span>
-                        <span class="select_period_week">Week</span>
-                        <span class="select_period_month">Month</span>
-                        <span class="select_period_year">Year</span>
+                        <span class="select_period_day" onclick="document.getElementById('year').style.display='none', document.getElementById('week').style.display='none', document.getElementById('month').style.display='none', document.getElementById('day').style.display='block'">Day</span>
+                        <span class="select_period_week" onclick="document.getElementById('year').style.display='none', document.getElementById('week').style.display='block', document.getElementById('month').style.display='none', document.getElementById('day').style.display='none'">Week</span>
+                        <span class="select_period_month" onclick="document.getElementById('year').style.display='none', document.getElementById('week').style.display='none', document.getElementById('month').style.display='block', document.getElementById('day').style.display='none'">Month</span>
+                        <span class="select_period_year" onclick="document.getElementById('year').style.display='block', document.getElementById('week').style.display='none', document.getElementById('month').style.display='none', document.getElementById('day').style.display='none'">Year</span>
 
                     </div>
                     <div class="cell_3">
@@ -365,7 +365,7 @@
 
                 </div>
             </div>    
-            <div class="calendar">
+            <div class="global_calendar_year" id="year">
                 <div class="calendar_menu">
                     <div class="year">
                         <div class="selected_year">
@@ -397,7 +397,7 @@
     
                         </span>
                         <div class="switch_days_today">
-                            <a class="switch_days_today_text">today</a>
+                            <a class="switch_days_today_text">Today</a>
                         </div>
 
                         <div class="switch_days_forvard">
@@ -450,6 +450,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -573,6 +585,18 @@
                             <div class="day">
                                 <a>31</a>
                                 
+                            </div>
+                            <div class="day other_month_day">
+                                <a>1</a>
+                                    
+                            </div>
+                            <div class="day other_month_day">
+                                <a>2</a>
+                                    
+                            </div>
+                            <div class="day other_month_day">
+                                <a>3</a>
+                                    
                             </div>
                            
 
@@ -619,6 +643,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -743,6 +779,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -787,6 +835,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -911,6 +971,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -955,6 +1027,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -1079,6 +1163,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -1123,6 +1219,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -1247,6 +1355,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -1291,6 +1411,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -1415,6 +1547,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -1459,6 +1603,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -1583,6 +1739,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -1627,6 +1795,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -1751,6 +1931,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -1795,6 +1987,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -1919,6 +2123,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -1963,6 +2179,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -2087,6 +2315,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -2131,6 +2371,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -2255,6 +2507,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -2299,6 +2563,18 @@
 
                         </div>
                         <div class="month_days">
+                            <div class="day other_month_day">
+                                <a>29</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>30</a>
+                                
+                            </div>
+                            <div class="day other_month_day">
+                                <a>31</a>
+                                
+                            </div>
                             <div class="day">
                                 <a>1</a>
                                 
@@ -2423,6 +2699,18 @@
                                 <a>31</a>
                                 
                             </div>
+                            <div class="day other_month_day">
+                                    <a>1</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>2</a>
+                                        
+                                </div>
+                                <div class="day other_month_day">
+                                    <a>3</a>
+                                        
+                                </div>
                            
 
                         </div>
@@ -2430,6 +2718,1060 @@
                     </div>
                     
 
+                </div>
+
+            </div>
+            <div class="global_calendar_week" id="week">
+                <div class="week_view">
+                    <div class="week_view_content">
+                        <div class="week_view_date">
+                            <div class="week_view_month_value">
+                                <a>October 2018</a>
+                            </div>
+                    
+                        </div>
+                        <div class="week_view_main_content">
+                            <div class="week_view_header">
+                                <div class="week_view_day week_view_sunday">
+                                    <div class="day_of_the_week">
+                                        <div class="day_of_the_week_value">
+                                            <a>su,</a>
+
+                                        </div>
+                                        <div class="day_of_the_week_number">
+                                            <a>10</a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="week_view_day week_view_saturday">
+                                    <div class="day_of_the_week">
+                                        <div class="day_of_the_week_value">
+                                            <a>sa,</a>
+
+                                        </div>
+                                        <div class="day_of_the_week_number">
+                                            <a>9</a>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day week_view_friday">
+                                    <div class="day_of_the_week">
+                                        <div class="day_of_the_week_value">
+                                            <a>fr,</a>
+
+                                        </div>
+                                        <div class="day_of_the_week_number">
+                                            <a>8</a>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day week_view_thursday">
+                                    <div class="day_of_the_week">
+                                        <div class="day_of_the_week_value">
+                                            <a>th,</a>
+
+                                        </div>
+                                        <div class="day_of_the_week_number">
+                                            <a>7</a>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day week_view_wednesday">
+                                    <div class="day_of_the_week">
+                                        <div class="day_of_the_week_value">
+                                            <a>we,</a>
+
+                                        </div>
+                                        <div class="day_of_the_week_number">
+                                            <a>6</a>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day week_view_tuesday">
+                                    <div class="day_of_the_week">
+                                        <div class="day_of_the_week_value">
+                                            <a>tu,</a>
+
+                                        </div>
+                                        <div class="day_of_the_week_number">
+                                            <a>5</a>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day week_view_monday">
+                                    <div class="day_of_the_week">
+                                        <div class="day_of_the_week_value">
+                                            <a>mo,</a>
+
+                                        </div>
+                                        <div class="day_of_the_week_number">
+                                            <a>4</a>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="week_view_days">
+                                <div class="week_view_day_column week_view_day_column_sunday">
+                                    <div class="hour_of_the_day hour_of_the_day_1">
+
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_2">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_3">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_4">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_5">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_6">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_7">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_8">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_9">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_10">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_11">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_12">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_13">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_14">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_15">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_16">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_17">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_18">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_19">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_20">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_21">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_22">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_23">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_24">
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="week_view_day_column week_view_day_column_saturday">
+                                    <div class="hour_of_the_day hour_of_the_day_1">
+
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_2">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_3">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_4">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_5">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_6">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_7">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_8">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_9">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_10">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_11">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_12">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_13">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_14">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_15">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_16">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_17">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_18">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_19">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_20">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_21">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_22">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_23">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_24">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day_column week_view_day_column_friday">
+                                    <div class="hour_of_the_day hour_of_the_day_1">
+
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_2">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_3">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_4">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_5">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_6">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_7">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_8">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_9">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_10">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_11">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_12">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_13">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_14">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_15">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_16">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_17">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_18">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_19">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_20">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_21">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_22">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_23">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_24">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day_column week_view_day_column_thursday">
+                                    <div class="hour_of_the_day hour_of_the_day_1">
+
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_2">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_3">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_4">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_5">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_6">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_7">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_8">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_9">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_10">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_11">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_12">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_13">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_14">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_15">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_16">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_17">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_18">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_19">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_20">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_21">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_22">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_23">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_24">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day_column week_view_day_column_wednesday">
+                                    <div class="hour_of_the_day hour_of_the_day_1">
+
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_2">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_3">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_4">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_5">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_6">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_7">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_8">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_9">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_10">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_11">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_12">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_13">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_14">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_15">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_16">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_17">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_18">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_19">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_20">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_21">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_22">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_23">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_24">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day_column week_view_day_column_tuesday">
+                                    <div class="hour_of_the_day hour_of_the_day_1">
+
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_2">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_3">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_4">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_5">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_6">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_7">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_8">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_9">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_10">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_11">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_12">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_13">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_14">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_15">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_16">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_17">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_18">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_19">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_20">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_21">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_22">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_23">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_24">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day_column week_view_day_column_monday">
+                                    <div class="hour_of_the_day hour_of_the_day_1">
+
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_2">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_3">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_4">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_5">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_6">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_7">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_8">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_9">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_10">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_11">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_12">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_13">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_14">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_15">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_16">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_17">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_18">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_19">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_20">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_21">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_22">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_23">
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_24">
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="week_view_day_column_time">
+                                    <div class="hour_of_the_day hour_of_the_day_1">
+                                        <div class="hour_of_the_day_value">
+                                            <a>00:00</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_2">
+                                        <div class="hour_of_the_day_value">
+                                            <a>01:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_3">
+                                        <div class="hour_of_the_day_value">
+                                            <a>02:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_4">
+                                        <div class="hour_of_the_day_value">
+                                            <a>03:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_5">
+                                        <div class="hour_of_the_day_value">
+                                            <a>04:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_6">
+                                        <div class="hour_of_the_day_value">
+                                            <a>05:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_7">
+                                        <div class="hour_of_the_day_value">
+                                            <a>06:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_8">
+                                        <div class="hour_of_the_day_value">
+                                            <a>07:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_9">
+                                        <div class="hour_of_the_day_value">
+                                            <a>08:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_10">
+                                        <div class="hour_of_the_day_value">
+                                            <a>09:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_11">
+                                        <div class="hour_of_the_day_value">
+                                            <a>10:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_12">
+                                        <div class="hour_of_the_day_value">
+                                            <a>11:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_13">
+                                        <div class="hour_of_the_day_value">
+                                            <a>12:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_14">
+                                        <div class="hour_of_the_day_value">
+                                            <a>13:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_15">
+                                        <div class="hour_of_the_day_value">
+                                            <a>14:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_16">
+                                        <div class="hour_of_the_day_value">
+                                            <a>15:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_17">
+                                        <div class="hour_of_the_day_value">
+                                            <a>16:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_18">
+                                        <div class="hour_of_the_day_value">
+                                            <a>17:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_19">
+                                        <div class="hour_of_the_day_value">
+                                            <a>18:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_20">
+                                        <div class="hour_of_the_day_value">
+                                            <a>19:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_21">
+                                        <div class="hour_of_the_day_value">
+                                            <a>20:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_22">
+                                        <div class="hour_of_the_day_value">
+                                            <a>21:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_23">
+                                        <div class="hour_of_the_day_value">
+                                            <a>22:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="hour_of_the_day hour_of_the_day_24">
+                                        <div class="hour_of_the_day_value">
+                                            <a>23:00</a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="global_calendar_month" id="month">
+                <div class="month_view_main_block">
+                    <div class="month_view_selected_month">
+                        <div class="month_view_selected_month_value">
+                            <a>October 2018</a>
+                        </div>
+
+                    </div>
+                    <div class="month_view_calendar_week">
+                        <div class="month_view_calendar_week_day month_view_calendar_week_day_monday">
+                            <a>mo</a>
+
+                        </div>
+                        <div class="month_view_calendar_week_day month_view_calendar_week_day_tuesday">
+                            <a>tu</a>
+                            
+                        </div>
+                        <div class="month_view_calendar_week_day month_view_calendar_week_day_wednesday">
+                            <a>we</a>
+                            
+                        </div>
+                        <div class="month_view_calendar_week_day month_view_calendar_week_day_thursday">
+                            <a>th</a>
+                            
+                        </div>
+                        <div class="month_view_calendar_week_day month_view_calendar_week_day_friday">
+                            <a>fr</a>
+                            
+                        </div>
+                        <div class="month_view_calendar_week_day month_view_calendar_week_day_saturday">
+                            <a>sa</a>
+                            
+                        </div>
+                        <div class="month_view_calendar_week_day month_view_calendar_week_day_sunday">
+                            <a>su</a>
+                            
+                        </div>
+
+                    </div>
+                    <div class="month_view_calendar_days">
+                        <div class="month_view_calendar_day month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>26</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>27</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>28</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>29</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>30</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>31</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend">
+                            <div class="month_view_calendar_day_number">
+                                <a>1</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>2</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>3</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>4</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>5</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>6</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend">
+                            <div class="month_view_calendar_day_number">
+                                <a>7</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend">
+                            <div class="month_view_calendar_day_number">
+                                <a>8</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>9</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>10</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>11</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>12</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>13</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend">
+                            <div class="month_view_calendar_day_number">
+                                <a>14</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend">
+                            <div class="month_view_calendar_day_number">
+                                <a>15</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>16</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>17</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>18</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>19</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>20</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend">
+                            <div class="month_view_calendar_day_number">
+                                <a>21</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend">
+                            <div class="month_view_calendar_day_number">
+                                <a>22</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>23</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>24</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>25</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>26</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>27</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend">
+                            <div class="month_view_calendar_day_number">
+                                <a>28</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend">
+                            <div class="month_view_calendar_day_number">
+                                <a>29</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>30</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>1</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>2</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>3</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>4</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>5</a>
+                            </div>
+                        </div>
+                        <div class="month_view_calendar_day month_view_calendar_day_weekend month_view_calendar_day_other_day">
+                            <div class="month_view_calendar_day_number">
+                                <a>6</a>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="global_calendar_day" id="day">
+                <div class="day_view_main_block">
+                    <div class="alert">
+                        <a>много хочешь >_></a> 
+                    </div>
                 </div>
 
             </div>
