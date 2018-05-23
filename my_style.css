@@ -264,7 +264,7 @@
 .panel_week_day {
     
     height: 100%;
-    width: 13.4%;
+    width: 13.6%;
     float: left;
     
 }
@@ -274,21 +274,25 @@
     height: 66%;
     width: 100%;
     margin-left: 3px;
+    margin-top: -5px;
 }
 
 .panel_day {
-    height: 30px;
-    width: 30px;
+    margin-bottom: 0px;
+    height: 28px;
+    width: 28px;
     float: left;
     cursor: pointer;
     text-align: center;
-    margin-left: 1px;
+    margin-left: 4px;
     border-radius: 100%;
     line-height: 180%;
+    font-size: 12px;
+    line-height: 2.48;
 }
 
 .panel_day a {
-    margin: 1px;
+    /* margin: 1px; */
 }
 
 .panel_day:hover {
